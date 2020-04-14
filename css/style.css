@@ -35,6 +35,18 @@ html {
     .helloworldcontainer {
     display: inline-block;
     background-color: #F6C8C9;
+    font-family: 'Shrikhand', cursive, serif;
+    }
+    h1 {
+        font-size: 40pt;
+        text-align: center;
+        color: #01989E;
+        
+    }
+    h2 {
+        font-size: 25pt;
+        text-align: center;
+        color: #01989E;
     }
 
 #kbpicbackground {
