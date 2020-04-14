@@ -14,7 +14,7 @@ html {
   }
   
   .topnav a { 
-     color: #E73D2C;
+    color: #E73D2C;
     text-align: center;
     padding: 14px 16px;
     margin-top: 90px;
@@ -34,19 +34,26 @@ html {
 }
     .helloworldcontainer {
     display: inline-block;
+    text-align: center;
     background-color: #F6C8C9;
     font-family: 'Shrikhand', cursive, serif;
+    padding: 20px;
     }
     h1 {
         font-size: 40pt;
         text-align: center;
         color: #01989E;
+        padding-left: 20px;
+        padding right: 20px;
+
         
     }
     h2 {
         font-size: 25pt;
         text-align: center;
         color: #01989E;
+        padding-left: 20px;
+        padding right: 20px;
     }
 
 #kbpicbackground {
@@ -72,8 +79,9 @@ footer {
 
 button {
     background-color: #EAE5DF; 
-}
-
-.button {
     color: #01989E;
+    font-family: 'Aleo', sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    margin-bottom: 20px;
 }
