@@ -33,6 +33,11 @@ html {
     margin-left: 15px;
 
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+}
 .content {
     display: flex;
     align-items: flex-start;
@@ -58,7 +63,7 @@ html {
 
         
     }
-    h2 {
+    p {
         font-size: 25pt;
         text-align: center;
         color: #01989E;
@@ -85,10 +90,6 @@ html {
 
 }
 
-footer {
-    background-color: #F6C8C9;
-}
-
 button {
     background-color: #EAE5DF; 
     color: #01989E;
@@ -104,4 +105,11 @@ button {
     font-family: 'Aleo', sans-serif;
     font-size: 12pt;
     color: #01989E;;
+}
+
+
+footer {
+    background-color: #F6C8C9;
+    font-family: 'Aleo', sans-serif;
+    color: #E73D2C;
 }
