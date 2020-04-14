@@ -1,19 +1,10 @@
-#logo {
-    display: flex;
-    height: 120px;
-    width: 120px;
-}
-.inline-block {
-    display: flex;
-}
-
 .topnav {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly; 
+    align-items: baseline;
+    justify-content: left; 
     background-color: #EAE5DF;
     overflow: hidden;
-    height: ;
+    height: 130px;
   }
   
   .topnav a { 
