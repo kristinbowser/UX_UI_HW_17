@@ -39,31 +39,26 @@ section {
 }
 .content {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr .3fr 1fr;
     grid-template-areas: 
-    "helloworldcontainer kbpicbackground"
-    "helloworldcontainer kbpicbackground"
-    "aboutmetext kbpicbackground"
-    "aboutmetext letsGetSocial"
-    "aboutmetext letsGetSocial"
-    "aboutmetext letsGetSocial";
+    "helloworldcontainer helloworldcontainer kbpicbackground"
+    "helloworldcontainer helloworldcontainer kbpicbackground"
+    "aboutmetext aboutmetext letsGetSocial"
+    "aboutmetext aboutmetext letsGetSocial"
+    "aboutmetext aboutmetext letsGetSocial";
 }
     .helloworldcontainer {
         grid-area: helloworldcontainer;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: left;
         background-color: #F6C8C9;
         font-family: 'Shrikhand', cursive, serif;
-        padding-bottom: 30px;
-        padding-right: 20px;
-        height: 75%;
+        height: 80%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
     h1 {
         font-size: 40pt;
-        text-align: center;
+        text-align: left;
         color: #01989E;
         padding-left: 20px;
         padding right: 20px;
@@ -103,6 +98,8 @@ section {
 }
 
 button {
+    display: flex;
+    align-items: center;
     background-color: #EAE5DF; 
     color: #01989E;
     font-family: 'Aleo', sans-serif;
@@ -111,21 +108,34 @@ button {
     margin-bottom: 20px;
 }
 
-.aboutmetext {
+#aboutmetext {
     grid-area: aboutmetext;
-    display: flex;
-    align-items: stretch;
     font-family: 'Aleo', sans-serif;
     font-size: 12pt;
-    color: #01989E;;
+    color: #01989E;
 }
 #letsGetSocial {
     grid-area: letsGetSocial;
+    color: #E73D2C;
     font-family: 'Shrikhand', cursive, serif;
+    font-size: 25pt;
+    padding-left: 130px;
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "email copyright";
+    align-content: center;
     background-color: #F6C8C9;
     font-family: 'Aleo', sans-serif;
     color: #E73D2C;
+    height: 100px;
+}
+#email {
+    grid-area: "email";
+}
+#copyright {
+    grid-area: "copyright";
 }
