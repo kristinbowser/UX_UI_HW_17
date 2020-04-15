@@ -56,6 +56,9 @@ section {
         height: 80%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
+    #hello {
+        text-align: center;
+    }
     h1 {
         font-size: 40pt;
         text-align: left;
@@ -73,6 +76,7 @@ section {
         color: #01989E;
         padding-left: 20px;
         padding right: 20px;
+        margin-top: -30px;
     }
 
 #kbpicbackground {
@@ -106,20 +110,25 @@ button {
     font-weight: bold;
     font-size: 15pt;
     margin-bottom: 20px;
-}
-
-#aboutmetext {
-    grid-area: aboutmetext;
-    font-family: 'Aleo', sans-serif;
-    font-size: 12pt;
-    color: #01989E;
+    margin-left: 330px;
 }
 #letsGetSocial {
     grid-area: letsGetSocial;
     color: #E73D2C;
     font-family: 'Shrikhand', cursive, serif;
     font-size: 25pt;
-    padding-left: 130px;
+    padding-left: 125px;
+    margin-top: 30px;
+}
+#aboutmetext {
+    grid-area: aboutmetext;
+    font-family: 'Aleo', sans-serif;
+    font-size: 12pt;
+    color: #01989E;
+    margin-top: -120px;
+}
+#aboutMeSection {
+    margin-top: -100px;
 }
 
 footer {
@@ -135,7 +144,9 @@ footer {
 }
 #email {
     grid-area: "email";
+    margin-left: 100px;
 }
 #copyright {
     grid-area: "copyright";
+    margin-left: 100px;
 }
