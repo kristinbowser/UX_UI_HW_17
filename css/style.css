@@ -31,7 +31,6 @@ html {
     background-color: #F6C8C9;
     color: #01989E;
     margin-left: 15px;
-
 }
 
 section {
@@ -39,27 +38,36 @@ section {
     flex-direction: column;
 }
 .content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "helloworldcontainer kbpicbackground"
+    "helloworldcontainer kbpicbackground"
+    "aboutmetext kbpicbackground"
+    "aboutmetext letsGetSocial"
+    "aboutmetext letsGetSocial"
+    "aboutmetext letsGetSocial";
 }
     .helloworldcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F6C8C9;
-    font-family: 'Shrikhand', cursive, serif;
-    padding-bottom: 30px;
-    padding-right: 20px;
-    height: 390px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
+        grid-area: helloworldcontainer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F6C8C9;
+        font-family: 'Shrikhand', cursive, serif;
+        padding-bottom: 30px;
+        padding-right: 20px;
+        height: 75%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     h1 {
         font-size: 40pt;
         text-align: center;
         color: #01989E;
         padding-left: 20px;
         padding right: 20px;
+        font-family: 'Shrikhand', cursive, serif;
 
         
     }
@@ -73,19 +81,22 @@ section {
     }
 
 #kbpicbackground {
+    grid-area: kbpicbackground;
     display: inline-flex;
     align-items: right;
     background-color: #01989E;
-    height: 520px;
+    height: 570px;
+    width: 450px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: 30px;
 }
 #kristin {
-    display: inline-flex;
-    align-items: flex-end;
-    height: 500px;
-    padding-top: 10px;
-    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 500px;
+    padding-top: 35px;
+    padding-left: 38px;
     padding-right: 10px;
     padding-bottom: 10px;
 
@@ -101,13 +112,17 @@ button {
 }
 
 .aboutmetext {
+    grid-area: aboutmetext;
     display: flex;
-    align-self: flex-start;
+    align-items: stretch;
     font-family: 'Aleo', sans-serif;
     font-size: 12pt;
     color: #01989E;;
 }
-
+#letsGetSocial {
+    grid-area: letsGetSocial;
+    font-family: 'Shrikhand', cursive, serif;
+}
 
 footer {
     background-color: #F6C8C9;
